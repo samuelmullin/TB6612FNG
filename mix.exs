@@ -25,7 +25,8 @@ defmodule TB6612FNG.MixProject do
   defp deps do
     [
       {:circuits_gpio, "~> 1.0"},
-      {:pigpiox, "~> 0.1"}
+      {:pigpiox, "~> 0.1"},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 
@@ -38,7 +39,7 @@ defmodule TB6612FNG.MixProject do
 
   defp package do
     [
-      name: "TB6612FNG",
+      name: "tb6612fng",
       description:
         "A driver for working with the TB6612FNG",
       licenses: ["Apache-2.0"],
